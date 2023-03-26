@@ -1,0 +1,37 @@
+<increment-input [value]="_value || 0" [step]="_step" [min]="_min" [max]="_max" [wrap]="_wrap"></increment-input>
+
+<mat-card>
+  
+  <mat-card-subtitle>Settings</mat-card-subtitle>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="_value" placeholder="Value">
+  </mat-form-field>
+
+  
+  <mat-form-field>
+    <input matInput [(ngModel)]="_step" placeholder="Step">
+  </mat-form-field>
+
+  
+  <mat-form-field>
+    <input matInput [(ngModel)]="_min" placeholder="Min.">
+  </mat-form-field>
+
+  
+  <mat-form-field>
+    <input matInput [(ngModel)]="_max" placeholder="Max.">
+  </mat-form-field>
+
+  
+  <mat-form-field>
+    <mat-select [(ngModel)]="_wrap" placeholder="Wrap">
+      <mat-option [value]="false">No</mat-option>
+      <mat-option [value]="true">Yes</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</mat-card>
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
